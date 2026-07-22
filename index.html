@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090a0c">
+  <meta name="description" content="Northman Football Academy is a year-round development program for dedicated European American football players aged 14–17, combining monthly camps, individualized athletic programming, film study and direct US coaching mentorship.">
+  <meta name="keywords" content="American football academy Europe, youth American football Sweden, football recruiting Europe USA, American football camps Scandinavia, Northman Football Academy">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://northmanfootballacademy.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Northman Football Academy | Train in Europe. Compete Anywhere.">
+  <meta property="og:description" content="Year-round elite development for dedicated European American football players aged 14–17.">
+  <meta property="og:url" content="https://northmanfootballacademy.com/">
+  <meta property="og:image" content="https://static.wixstatic.com/media/a7694a_90f4716e7a124dc995c79f4424f1bb97~mv2.jpg/v1/fill/w_1600,h_900,al_c,q_85/IMG_9819.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>Northman Football Academy | European Player Development</title>
+
+  <style>
+    :root {
+      --ink: #090a0c;
+      --ink-soft: #111318;
+      --panel: #17191e;
+      --panel-2: #1d2026;
+      --line: rgba(255,255,255,.12);
+      --line-strong: rgba(214,174,66,.42);
+      --gold: #d6ae42;
+      --gold-light: #f1d477;
+      --cream: #f6f1e6;
+      --white: #ffffff;
+      --muted: #aeb3bd;
+      --blue: #78aee8;
+      --success: #9fd39e;
+      --danger: #ff8b82;
+      --shadow: 0 30px 80px rgba(0,0,0,.34);
+      --radius: 22px;
+      --radius-sm: 14px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--ink);
+      color: var(--white);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .18;
+      z-index: -1;
+      background-image:
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: linear-gradient(to bottom, black, transparent 85%);
+    }
+
+    a { color: inherit; }
+    img { max-width: 100%; display: block; }
+    button, input, select, textarea { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    :focus-visible { outline: 3px solid var(--gold-light); outline-offset: 4px; }
+
+    .skip-link {
+      position: fixed;
+      left: 18px;
+      top: -100px;
+      z-index: 999;
+      padding: 12px 16px;
+      border-radius: 8px;
+      background: var(--gold-light);
+      color: var(--ink);
+      font-weight: 900;
+      transition: top .2s ease;
+    }
+    .skip-link:focus { top: 18px; }
+
+    .container { width: min(calc(100% - 40px), var(--max)); margin-inline: auto; }
+    .section { padding: 100px 0; position: relative; }
+    .section-tight { padding: 72px 0; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 18px;
+      color: var(--gold-light);
+      font-size: .78rem;
+      font-weight: 900;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 34px; height: 2px; background: currentColor; }
+    .section-title {
+      margin: 0;
+      max-width: 820px;
+      font-size: clamp(2.25rem, 5vw, 4.5rem);
+      line-height: .98;
+      letter-spacing: -.055em;
+      text-transform: uppercase;
+    }
+    .section-intro {
+      max-width: 720px;
+      margin: 24px 0 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.16rem);
+    }
+    .gold { color: var(--gold-light); }
+    .muted { color: var(--muted); }
+
+    .announcement {
+      position: relative;
+      z-index: 50;
+      padding: 10px 20px;
+      background: var(--gold);
+      color: var(--ink);
+      text-align: center;
+      font-size: .82rem;
+      font-weight: 900;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      background: rgba(9,10,12,.84);
+      backdrop-filter: blur(18px);
+    }
+    .nav-shell {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 13px;
+      text-decoration: none;
+      font-weight: 950;
+      letter-spacing: -.02em;
+      line-height: 1;
+    }
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+      border: 2px solid var(--gold);
+      border-radius: 12px 12px 18px 18px;
+      display: grid;
+      place-items: center;
+      color: var(--gold-light);
+      transform: rotate(45deg);
+      background: linear-gradient(135deg, rgba(214,174,66,.18), transparent);
+    }
+    .brand-mark span { transform: rotate(-45deg); font-size: 1.15rem; }
+    .brand-copy small {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: .61rem;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+    }
+    .nav-links { display: flex; align-items: center; gap: 26px; }
+    .nav-links a {
+      color: #d7dae0;
+      text-decoration: none;
+      font-size: .9rem;
+      font-weight: 750;
+    }
+    .nav-links a:hover { color: var(--gold-light); }
+    .nav-cta {
+      padding: 11px 17px;
+      border: 1px solid var(--gold);
+      border-radius: 999px;
+      color: var(--ink) !important;
+      background: var(--gold);
+    }
+    .menu-toggle {
+      display: none;
+      width: 46px;
+      height: 46px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      color: var(--white);
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .hero {
+      min-height: calc(100vh - 113px);
+      display: grid;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -3;
+      background:
+        linear-gradient(90deg, rgba(9,10,12,.98) 0%, rgba(9,10,12,.86) 46%, rgba(9,10,12,.28) 100%),
+        linear-gradient(0deg, var(--ink) 0%, transparent 28%),
+        url('https://static.wixstatic.com/media/a7694a_90f4716e7a124dc995c79f4424f1bb97~mv2.jpg/v1/fill/w_1600,h_900,al_c,q_85/IMG_9819.jpg') center/cover no-repeat;
+      transform: scale(1.015);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -8%;
+      top: 10%;
+      z-index: -2;
+      width: 480px;
+      height: 480px;
+      border: 1px solid rgba(214,174,66,.3);
+      border-radius: 50%;
+      box-shadow: 0 0 0 80px rgba(214,174,66,.025), 0 0 0 160px rgba(214,174,66,.018);
+    }
+    .hero-inner { padding: 90px 0 78px; }
+    .hero-content { max-width: 790px; }
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+      padding: 9px 13px;
+      border: 1px solid rgba(214,174,66,.42);
+      border-radius: 999px;
+      background: rgba(9,10,12,.55);
+      color: var(--gold-light);
+      font-size: .76rem;
+      font-weight: 900;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .hero-kicker::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--gold-light); box-shadow: 0 0 16px var(--gold); }
+    h1 {
+      margin: 0;
+      font-size: clamp(3.7rem, 9.4vw, 8.4rem);
+      line-height: .84;
+      letter-spacing: -.075em;
+      text-transform: uppercase;
+      text-wrap: balance;
+    }
+    .hero-lead {
+      max-width: 680px;
+      margin: 28px 0 0;
+      color: #d9dce2;
+      font-size: clamp(1.06rem, 2vw, 1.28rem);
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+    .btn {
+      min-height: 52px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 21px;
+      border: 1px solid transparent;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 900;
+      cursor: pointer;
+      transition: transform .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: var(--gold); color: var(--ink); }
+    .btn-primary:hover { background: var(--gold-light); }
+    .btn-secondary { border-color: rgba(255,255,255,.28); background: rgba(9,10,12,.44); color: var(--white); }
+    .btn-secondary:hover { border-color: var(--gold); }
+    .btn-arrow { font-size: 1.15rem; }
+
+    .hero-proof {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      max-width: 770px;
+      margin-top: 50px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      background: rgba(9,10,12,.58);
+      backdrop-filter: blur(12px);
+      overflow: hidden;
+    }
+    .proof-item { padding: 18px 20px; }
+    .proof-item + .proof-item { border-left: 1px solid var(--line); }
+    .proof-item strong { display: block; color: var(--gold-light); font-size: 1.22rem; }
+    .proof-item span { color: var(--muted); font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; font-weight: 800; }
+
+    .club-banner {
+      border-block: 1px solid var(--line-strong);
+      background: linear-gradient(90deg, rgba(214,174,66,.14), rgba(214,174,66,.045), rgba(214,174,66,.14));
+    }
+    .club-banner-inner {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 22px;
+      padding: 26px 0;
+    }
+    .club-badge {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      color: var(--gold-light);
+      font-size: 1.45rem;
+    }
+    .club-banner h2 { margin: 0; font-size: clamp(1.05rem, 2vw, 1.42rem); text-transform: uppercase; letter-spacing: -.02em; }
+    .club-banner p { margin: 4px 0 0; color: var(--muted); }
+    .club-banner strong { color: var(--cream); }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 48px;
+    }
+    .pillar {
+      min-height: 340px;
+      padding: 34px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(155deg, rgba(255,255,255,.055), rgba(255,255,255,.018));
+      position: relative;
+      overflow: hidden;
+      transition: transform .25s ease, border-color .25s ease;
+    }
+    .pillar:hover { transform: translateY(-6px); border-color: var(--line-strong); }
+    .pillar::after {
+      content: attr(data-number);
+      position: absolute;
+      right: 20px;
+      bottom: -26px;
+      color: rgba(255,255,255,.035);
+      font-size: 10rem;
+      font-weight: 950;
+      line-height: 1;
+    }
+    .icon-box {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(214,174,66,.44);
+      border-radius: 14px;
+      color: var(--gold-light);
+      background: rgba(214,174,66,.09);
+      font-size: 1.35rem;
+    }
+    .pillar h3 { margin: 28px 0 12px; font-size: 1.45rem; text-transform: uppercase; letter-spacing: -.03em; }
+    .pillar p { margin: 0; color: var(--muted); }
+    .pillar ul { margin: 23px 0 0; padding: 0; list-style: none; color: #d8dbe1; }
+    .pillar li { display: flex; gap: 10px; margin-top: 9px; font-size: .93rem; }
+    .pillar li::before { content: "→"; color: var(--gold-light); }
+
+    .program-wrap {
+      border: 1px solid var(--line);
+      border-radius: 32px;
+      background: var(--ink-soft);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .program-head {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 60px;
+      padding: 62px;
+      border-bottom: 1px solid var(--line);
+      background: radial-gradient(circle at 85% 15%, rgba(214,174,66,.13), transparent 38%);
+    }
+    .program-head p { color: var(--muted); max-width: 560px; }
+    .program-price {
+      align-self: center;
+      justify-self: end;
+      min-width: 270px;
+      padding: 28px;
+      border: 1px solid var(--line-strong);
+      border-radius: 20px;
+      background: rgba(9,10,12,.65);
+    }
+    .program-price span { color: var(--muted); text-transform: uppercase; letter-spacing: .1em; font-size: .75rem; font-weight: 900; }
+    .program-price strong { display: block; margin: 2px 0; font-size: 3.9rem; line-height: 1; letter-spacing: -.07em; }
+    .program-price small { color: var(--gold-light); font-weight: 800; }
+    .deliverables {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .deliverable {
+      padding: 34px 38px;
+      border-bottom: 1px solid var(--line);
+    }
+    .deliverable:nth-child(odd) { border-right: 1px solid var(--line); }
+    .deliverable:nth-last-child(-n+2) { border-bottom: 0; }
+    .deliverable-top { display: flex; align-items: flex-start; gap: 16px; }
+    .deliverable-num { color: var(--gold-light); font-weight: 950; letter-spacing: .08em; }
+    .deliverable h3 { margin: 0; font-size: 1.14rem; text-transform: uppercase; }
+    .deliverable p { margin: 10px 0 0 40px; color: var(--muted); }
+
+    .month-layout {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 70px;
+      align-items: start;
+    }
+    .sticky-copy { position: sticky; top: 125px; }
+    .month-track { position: relative; }
+    .month-track::before {
+      content: "";
+      position: absolute;
+      left: 23px;
+      top: 30px;
+      bottom: 30px;
+      width: 1px;
+      background: linear-gradient(var(--gold), rgba(214,174,66,.12));
+    }
+    .month-step {
+      position: relative;
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 22px;
+      padding: 0 0 40px;
+    }
+    .step-dot {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      color: var(--ink);
+      background: var(--gold-light);
+      font-weight: 950;
+      z-index: 1;
+    }
+    .step-card {
+      padding: 25px 28px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--panel);
+    }
+    .step-card small { color: var(--gold-light); font-weight: 900; text-transform: uppercase; letter-spacing: .1em; }
+    .step-card h3 { margin: 6px 0 8px; font-size: 1.25rem; }
+    .step-card p { margin: 0; color: var(--muted); }
+
+    .roadmap {
+      background: var(--cream);
+      color: var(--ink);
+    }
+    .roadmap .eyebrow { color: #7c631f; }
+    .roadmap .section-intro { color: #595c63; }
+    .years {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .year-card {
+      min-height: 500px;
+      padding: 42px;
+      border-radius: 26px;
+      position: relative;
+      overflow: hidden;
+    }
+    .year-one { color: var(--white); background: var(--ink-soft); }
+    .year-two { border: 1px solid #cbc3b3; background: #fffdf7; }
+    .year-label { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+    .year-label span { font-size: .78rem; font-weight: 950; letter-spacing: .13em; text-transform: uppercase; }
+    .year-label strong { font-size: 4.5rem; line-height: .9; opacity: .12; }
+    .year-card h3 { margin: 58px 0 14px; font-size: clamp(2rem, 4vw, 3.2rem); line-height: .96; text-transform: uppercase; letter-spacing: -.05em; }
+    .year-one p { color: #b9bec8; }
+    .year-two p { color: #5d6067; }
+    .year-list { margin: 32px 0 0; padding: 0; list-style: none; }
+    .year-list li { display: flex; align-items: flex-start; gap: 12px; margin-top: 13px; font-weight: 700; }
+    .year-list li::before { content: "✓"; color: #9b7921; font-weight: 950; }
+    .road-arrow {
+      position: absolute;
+      right: -25px;
+      bottom: -35px;
+      font-size: 15rem;
+      line-height: 1;
+      opacity: .04;
+    }
+
+    .hubs-layout {
+      display: grid;
+      grid-template-columns: .78fr 1.22fr;
+      gap: 55px;
+      align-items: start;
+    }
+    .hubs-note {
+      margin-top: 28px;
+      padding: 18px;
+      border-left: 3px solid var(--gold);
+      background: rgba(214,174,66,.07);
+      color: var(--muted);
+    }
+    .hub-list { display: grid; gap: 14px; }
+    .hub-card {
+      display: grid;
+      grid-template-columns: 86px 1fr auto;
+      align-items: center;
+      gap: 20px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--panel);
+    }
+    .hub-code {
+      width: 68px;
+      height: 68px;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      color: var(--ink);
+      background: var(--gold-light);
+      font-weight: 950;
+      letter-spacing: -.04em;
+    }
+    .hub-card h3 { margin: 0; text-transform: uppercase; }
+    .hub-card p { margin: 3px 0 0; color: var(--muted); }
+    .hub-status { color: var(--gold-light); font-size: .73rem; font-weight: 950; letter-spacing: .1em; text-transform: uppercase; }
+
+    .pipeline-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 50px;
+      counter-reset: pipeline;
+    }
+    .pipeline-step {
+      counter-increment: pipeline;
+      min-height: 280px;
+      padding: 28px;
+      border-top: 3px solid var(--gold);
+      background: var(--panel);
+      position: relative;
+    }
+    .pipeline-step::before {
+      content: "0" counter(pipeline);
+      color: rgba(255,255,255,.09);
+      font-size: 4rem;
+      font-weight: 950;
+      line-height: 1;
+    }
+    .pipeline-step h3 { margin: 50px 0 10px; font-size: 1.1rem; text-transform: uppercase; }
+    .pipeline-step p { margin: 0; color: var(--muted); font-size: .93rem; }
+
+    .eligibility-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      overflow: hidden;
+      background: var(--panel);
+    }
+    .eligibility-copy { padding: 52px; }
+    .eligibility-copy h2 { margin: 0; font-size: clamp(2.2rem, 4vw, 4rem); line-height: .98; text-transform: uppercase; letter-spacing: -.05em; }
+    .check-list { margin: 34px 0 0; padding: 0; list-style: none; }
+    .check-list li { display: grid; grid-template-columns: 30px 1fr; gap: 13px; margin-top: 17px; color: #d6d9df; }
+    .check-list li::before {
+      content: "✓";
+      width: 26px;
+      height: 26px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--ink);
+      background: var(--gold-light);
+      font-weight: 950;
+    }
+    .membership-card {
+      padding: 52px;
+      background: linear-gradient(145deg, #d6ae42, #f3d97d);
+      color: var(--ink);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .membership-card .label { font-size: .78rem; font-weight: 950; letter-spacing: .14em; text-transform: uppercase; }
+    .membership-card .price { margin: 28px 0 6px; font-size: clamp(4.5rem, 9vw, 7.5rem); line-height: .8; letter-spacing: -.085em; font-weight: 950; }
+    .membership-card .price span { font-size: 1rem; letter-spacing: 0; }
+    .membership-card p { max-width: 400px; font-weight: 680; }
+    .membership-card .btn { margin-top: 30px; background: var(--ink); color: var(--white); align-self: flex-start; }
+    .membership-card small { display: block; margin-top: 16px; opacity: .72; }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: .7fr 1.3fr;
+      gap: 65px;
+      margin-top: 48px;
+    }
+    .faq-aside { color: var(--muted); }
+    .faq-aside a { color: var(--gold-light); font-weight: 850; }
+    details {
+      border-bottom: 1px solid var(--line);
+      padding: 0;
+    }
+    summary {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 22px 0;
+      cursor: pointer;
+      font-weight: 850;
+      font-size: 1.05rem;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--gold-light); font-size: 1.45rem; font-weight: 400; }
+    details[open] summary::after { content: "–"; }
+    details p { margin: 0 0 22px; max-width: 750px; color: var(--muted); }
+
+    .apply-section { padding-bottom: 0; }
+    .apply-wrap {
+      padding: 72px;
+      border-radius: 30px 30px 0 0;
+      background:
+        linear-gradient(120deg, rgba(9,10,12,.96), rgba(9,10,12,.66)),
+        url('https://static.wixstatic.com/media/a7694a_90f4716e7a124dc995c79f4424f1bb97~mv2.jpg/v1/fill/w_1600,h_900,al_c,q_85/IMG_9819.jpg') center/cover no-repeat;
+      border: 1px solid var(--line-strong);
+      border-bottom: 0;
+    }
+    .apply-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 55px; align-items: center; }
+    .apply-wrap h2 { margin: 0; font-size: clamp(3rem, 6vw, 6.5rem); line-height: .86; letter-spacing: -.07em; text-transform: uppercase; }
+    .apply-wrap p { max-width: 650px; color: #d7dae0; }
+    .application-panel {
+      padding: 30px;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 20px;
+      background: rgba(17,19,24,.9);
+      backdrop-filter: blur(14px);
+    }
+    .application-panel h3 { margin: 0 0 8px; text-transform: uppercase; }
+    .application-panel p { margin: 0; color: var(--muted); font-size: .93rem; }
+    .application-steps { margin: 22px 0; padding: 0; list-style: none; }
+    .application-steps li { display: flex; gap: 12px; margin-top: 12px; }
+    .application-steps span {
+      flex: 0 0 25px;
+      height: 25px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      color: var(--gold-light);
+      font-size: .75rem;
+      font-weight: 950;
+    }
+    .application-panel .btn { width: 100%; }
+
+    footer { border-top: 1px solid var(--line); background: #07080a; }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr .8fr;
+      gap: 50px;
+      padding: 55px 0;
+    }
+    .footer-brand p { max-width: 410px; color: var(--muted); }
+    .footer-col h3 { margin: 0 0 14px; font-size: .82rem; color: var(--gold-light); letter-spacing: .12em; text-transform: uppercase; }
+    .footer-col a { display: block; margin-top: 9px; color: var(--muted); text-decoration: none; }
+    .footer-col a:hover { color: var(--white); }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 22px 0 30px;
+      border-top: 1px solid var(--line);
+      color: #777d87;
+      font-size: .82rem;
+    }
+
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity .65s ease, transform .65s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+
+    @media (max-width: 980px) {
+      .menu-toggle { display: grid; place-items: center; }
+      .nav-links {
+        position: fixed;
+        inset: 113px 20px auto 20px;
+        display: none;
+        align-items: stretch;
+        flex-direction: column;
+        gap: 0;
+        padding: 16px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: rgba(9,10,12,.98);
+        box-shadow: var(--shadow);
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 13px; }
+      .nav-cta { margin-top: 8px; text-align: center; }
+      .program-head, .month-layout, .hubs-layout, .faq-grid, .apply-grid { grid-template-columns: 1fr; }
+      .sticky-copy { position: static; }
+      .program-price { justify-self: start; }
+      .pipeline-grid { grid-template-columns: repeat(2, 1fr); }
+      .apply-wrap { padding: 55px 38px; }
+    }
+
+    @media (max-width: 760px) {
+      .container { width: min(calc(100% - 28px), var(--max)); }
+      .section { padding: 76px 0; }
+      .announcement { font-size: .68rem; }
+      .site-header .nav-shell { min-height: 70px; }
+      .brand-copy { font-size: .84rem; }
+      .brand-mark { width: 39px; height: 39px; }
+      .nav-links { inset: 104px 14px auto 14px; }
+      .hero { min-height: auto; }
+      .hero::before {
+        background:
+          linear-gradient(90deg, rgba(9,10,12,.95), rgba(9,10,12,.67)),
+          linear-gradient(0deg, var(--ink), transparent 40%),
+          url('https://static.wixstatic.com/media/a7694a_90f4716e7a124dc995c79f4424f1bb97~mv2.jpg/v1/fill/w_1000,h_1200,al_c,q_80/IMG_9819.jpg') center/cover no-repeat;
+      }
+      .hero-inner { padding: 82px 0 62px; }
+      .hero-proof { grid-template-columns: 1fr; }
+      .proof-item + .proof-item { border-left: 0; border-top: 1px solid var(--line); }
+      .club-banner-inner { grid-template-columns: auto 1fr; }
+      .club-banner-inner .btn { grid-column: 1 / -1; }
+      .pillars-grid, .years, .eligibility-wrap, .footer-grid { grid-template-columns: 1fr; }
+      .program-head { padding: 38px 25px; gap: 28px; }
+      .program-price { min-width: 0; width: 100%; }
+      .deliverables { grid-template-columns: 1fr; }
+      .deliverable, .deliverable:nth-child(odd), .deliverable:nth-last-child(-n+2) { border-right: 0; border-bottom: 1px solid var(--line); }
+      .deliverable:last-child { border-bottom: 0; }
+      .deliverable { padding: 28px 25px; }
+      .deliverable p { margin-left: 0; }
+      .year-card { min-height: 0; padding: 32px 27px; }
+      .year-card h3 { margin-top: 35px; }
+      .hub-card { grid-template-columns: 65px 1fr; }
+      .hub-code { width: 58px; height: 58px; }
+      .hub-status { grid-column: 2; }
+      .pipeline-grid { grid-template-columns: 1fr; }
+      .eligibility-copy, .membership-card { padding: 38px 27px; }
+      .apply-wrap { padding: 45px 24px; border-radius: 22px 22px 0 0; }
+      .footer-grid { gap: 30px; }
+      .footer-bottom { flex-direction: column; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsOrganization",
+    "name": "Northman Football Academy",
+    "url": "https://northmanfootballacademy.com/",
+    "logo": "https://static.wixstatic.com/media/a7694a_590cfe47369d4667adc626a388a960fd~mv2.png",
+    "description": "A year-round American football development academy for dedicated European athletes aged 14–17.",
+    "sport": "American Football",
+    "areaServed": "Europe",
+    "parentOrganization": {
+      "@type": "SportsOrganization",
+      "name": "Northman Football",
+      "url": "https://www.northmanfootballcamps.com/"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "50",
+      "priceCurrency": "EUR",
+      "description": "Monthly academy membership"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="announcement">Year-round academy · Ages 14–17 · €50 monthly membership</div>
+
+  <header class="site-header" aria-label="Primary navigation">
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="Northman Football Academy home">
+        <span class="brand-mark" aria-hidden="true"><span>N</span></span>
+        <span class="brand-copy">Northman Football Academy<small>European player pathway</small></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation menu">☰</button>
+
+      <nav class="nav-links" id="primary-menu">
+        <a href="#program">Program</a>
+        <a href="#pathway">Pathway</a>
+        <a href="#hubs">Hubs</a>
+        <a href="#eligibility">Eligibility</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-cta" href="#apply">Apply</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <div class="hero-kicker">Built for serious European athletes</div>
+          <h1>Train in Europe.<br><span class="gold">Compete anywhere.</span></h1>
+          <p class="hero-lead">A year-round American football development system for dedicated players aged 14–17—combining monthly camps, individualized athletic programming, film study and direct mentorship from US coaches.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#apply">Apply for the Academy <span class="btn-arrow">→</span></a>
+            <a class="btn btn-secondary" href="#program">Explore the program</a>
+          </div>
+          <div class="hero-proof" aria-label="Academy facts">
+            <div class="proof-item"><strong>14–17</strong><span>Player age range</span></div>
+            <div class="proof-item"><strong>€50</strong><span>Monthly membership</span></div>
+            <div class="proof-item"><strong>12 months</strong><span>Continuous development</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="club-banner" aria-label="Local club commitment">
+      <div class="container club-banner-inner">
+        <div class="club-badge" aria-hidden="true">⚑</div>
+        <div>
+          <h2>Your club remains your football home.</h2>
+          <p>Northman Academy is a <strong>supplemental development program</strong>—not a replacement for local club training or competition.</p>
+        </div>
+        <a class="btn btn-secondary" href="#eligibility">Read player requirements</a>
+      </div>
+    </section>
+
+    <section class="section" id="program">
+      <div class="container">
+        <div class="reveal">
+          <div class="eyebrow">The Northman system</div>
+          <h2 class="section-title">One academy.<br><span class="gold">Three development engines.</span></h2>
+          <p class="section-intro">The gap between potential and opportunity is rarely one workout. It is the result of consistent coaching, measurable athletic progress and exposure to people who understand the next level.</p>
+        </div>
+
+        <div class="pillars-grid">
+          <article class="pillar reveal" data-number="1">
+            <div class="icon-box" aria-hidden="true">🏈</div>
+            <h3>Monthly camps</h3>
+            <p>High-tempo weekend camps rotate through Nordic hubs to make elite development accessible without removing athletes from their home clubs.</p>
+            <ul>
+              <li>Position-specific skill labs</li>
+              <li>Team concepts and system installation</li>
+              <li>Controlled roster sizes by position</li>
+            </ul>
+          </article>
+
+          <article class="pillar reveal" data-number="2">
+            <div class="icon-box" aria-hidden="true">↗</div>
+            <h3>Physical + film</h3>
+            <p>Each athlete follows an off-field plan built around the speed, strength, movement and tactical standards used in US recruiting.</p>
+            <ul>
+              <li>Personalized strength and speed plan</li>
+              <li>Combine-focused testing benchmarks</li>
+              <li>Digital classroom and film review</li>
+            </ul>
+          </article>
+
+          <article class="pillar reveal" data-number="3">
+            <div class="icon-box" aria-hidden="true">★</div>
+            <h3>US mentorship</h3>
+            <p>Players gain recurring access to American high school and college coaches, with a clear pathway into Northman showcase opportunities.</p>
+            <ul>
+              <li>Monthly digital coach sessions</li>
+              <li>Recruiting education for families</li>
+              <li>Showcase and scouting-network access</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="program-wrap reveal">
+          <div class="program-head">
+            <div>
+              <div class="eyebrow">Core membership</div>
+              <h2 class="section-title">Everything required to <span class="gold">keep developing.</span></h2>
+              <p>The academy turns isolated camps into a connected year-round curriculum. Players train in person, execute individual plans at home and continue learning together online.</p>
+            </div>
+            <div class="program-price">
+              <span>Academy membership</span>
+              <strong>€50</strong>
+              <small>per player / month</small>
+            </div>
+          </div>
+
+          <div class="deliverables">
+            <article class="deliverable">
+              <div class="deliverable-top"><span class="deliverable-num">01</span><h3>Monthly weekend camp</h3></div>
+              <p>Admission to one academy training weekend each month at a rotating regional hub.</p>
+            </article>
+            <article class="deliverable">
+              <div class="deliverable-top"><span class="deliverable-num">02</span><h3>Position development</h3></div>
+              <p>Technical instruction organized by position, with controlled player-to-coach ratios.</p>
+            </article>
+            <article class="deliverable">
+              <div class="deliverable-top"><span class="deliverable-num">03</span><h3>Strength + speed plan</h3></div>
+              <p>An individualized program targeting football movement quality and verified combine metrics.</p>
+            </article>
+            <article class="deliverable">
+              <div class="deliverable-top"><span class="deliverable-num">04</span><h3>Film and digital classroom</h3></div>
+              <p>Online meetings for play installation, scheme understanding, assignment review and film breakdown.</p>
+            </article>
+            <article class="deliverable">
+              <div class="deliverable-top"><span class="deliverable-num">05</span><h3>US coach mentorship</h3></div>
+              <p>Monthly masterclasses and Q&amp;A sessions with active American high school and college coaches.</p>
+            </article>
+            <article class="deliverable">
+              <div class="deliverable-top"><span class="deliverable-num">06</span><h3>Northman event access</h3></div>
+              <p>Access to Northman camps, passing academies, prep opportunities and recruiting showcases.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container month-layout">
+        <div class="sticky-copy reveal">
+          <div class="eyebrow">Your month inside Northman</div>
+          <h2 class="section-title">Development does not stop <span class="gold">when camp ends.</span></h2>
+          <p class="section-intro">Every month connects physical preparation, football intelligence and live coaching into one repeatable cycle.</p>
+        </div>
+
+        <div class="month-track">
+          <article class="month-step reveal">
+            <div class="step-dot">1</div>
+            <div class="step-card"><small>Week one</small><h3>Plan and prepare</h3><p>Players receive their training priorities, position focus and athletic targets for the month.</p></div>
+          </article>
+          <article class="month-step reveal">
+            <div class="step-dot">2</div>
+            <div class="step-card"><small>Week two</small><h3>Train at home</h3><p>Athletes complete strength, speed, mobility and position work while continuing all local club responsibilities.</p></div>
+          </article>
+          <article class="month-step reveal">
+            <div class="step-dot">3</div>
+            <div class="step-card"><small>Week three</small><h3>Learn online</h3><p>The academy meets digitally for film review, concept installation and mentorship with European and US coaches.</p></div>
+          </article>
+          <article class="month-step reveal">
+            <div class="step-dot">4</div>
+            <div class="step-card"><small>Weekend camp</small><h3>Apply under pressure</h3><p>Players bring the month together through position labs, team periods, testing and coached competitive reps.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section roadmap" id="pathway">
+      <div class="container">
+        <div class="reveal">
+          <div class="eyebrow">The two-year master plan</div>
+          <h2 class="section-title">First build the player.<br>Then <span style="color:#7c631f">test the player.</span></h2>
+          <p class="section-intro">The academy begins with system, technique and measurable development before moving into international competition and broader recruiting exposure.</p>
+        </div>
+
+        <div class="years">
+          <article class="year-card year-one reveal">
+            <div class="year-label"><span>Foundation + development</span><strong>01</strong></div>
+            <h3>Year one:<br>Build the standard.</h3>
+            <p>Install the core system, develop position technique, establish athletic baselines and create a disciplined learning culture.</p>
+            <ul class="year-list">
+              <li>Core offensive and defensive system installation</li>
+              <li>Position-specific technical development</li>
+              <li>Film review and football intelligence</li>
+              <li>Verified performance tracking</li>
+              <li>Intra-squad evaluation scrimmages</li>
+            </ul>
+            <div class="road-arrow" aria-hidden="true">↗</div>
+          </article>
+
+          <article class="year-card year-two reveal">
+            <div class="year-label"><span>Competition + exposure</span><strong>02</strong></div>
+            <h3>Year two:<br>Compete beyond borders.</h3>
+            <p>Move from internal development into competitive fixtures against European academies and touring US high school or prep teams.</p>
+            <ul class="year-list">
+              <li>European academy fixtures</li>
+              <li>Games against visiting US teams</li>
+              <li>Expanded combine and film profiles</li>
+              <li>Academic recruiting preparation</li>
+              <li>Direct distribution to the US scouting network</li>
+            </ul>
+            <div class="road-arrow" aria-hidden="true">↗</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="hubs">
+      <div class="container hubs-layout">
+        <div class="reveal">
+          <div class="eyebrow">Rotating Nordic hubs</div>
+          <h2 class="section-title">Elite access without <span class="gold">leaving your club.</span></h2>
+          <p class="section-intro">Monthly camps rotate to reduce repeated travel demands and connect high-potential players across the Nordic region.</p>
+          <div class="hubs-note"><strong>Launch principle:</strong> publish one quarter at a time so families can plan travel while the academy preserves flexibility around facilities, clubs and coaching availability.</div>
+        </div>
+
+        <div class="hub-list">
+          <article class="hub-card reveal">
+            <div class="hub-code">UPP</div>
+            <div><h3>Uppsala, Sweden</h3><p>Primary Swedish development hub</p></div>
+            <span class="hub-status">Rotation hub</span>
+          </article>
+          <article class="hub-card reveal">
+            <div class="hub-code">GEN</div>
+            <div><h3>Gentofte, Denmark</h3><p>Denmark and southern Nordic access</p></div>
+            <span class="hub-status">Rotation hub</span>
+          </article>
+          <article class="hub-card reveal">
+            <div class="hub-code">OSL</div>
+            <div><h3>Oslo region, Norway</h3><p>Norwegian and western Nordic access</p></div>
+            <span class="hub-status">Rotation hub</span>
+          </article>
+          <article class="hub-card reveal">
+            <div class="hub-code">DIG</div>
+            <div><h3>Digital classroom</h3><p>Film, scheme, mentorship and recruiting education</p></div>
+            <span class="hub-status">Every month</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="reveal">
+          <div class="eyebrow">The US pathway</div>
+          <h2 class="section-title">Recruiting is a process—<span class="gold">not a promise.</span></h2>
+          <p class="section-intro">Northman prepares serious players to become easier to evaluate by combining verified performance data, usable film, academic readiness and direct coach access.</p>
+        </div>
+
+        <div class="pipeline-grid">
+          <article class="pipeline-step reveal"><h3>Develop</h3><p>Build technique, strength, speed, football intelligence and consistent habits.</p></article>
+          <article class="pipeline-step reveal"><h3>Verify</h3><p>Record combine measurements and position-specific evaluation data.</p></article>
+          <article class="pipeline-step reveal"><h3>Package</h3><p>Organize film, translated academic information and an accurate athlete profile.</p></article>
+          <article class="pipeline-step reveal"><h3>Connect</h3><p>Use Northman showcases, coach relationships and video distribution to create legitimate opportunities.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="eligibility">
+      <div class="container">
+        <div class="eligibility-wrap reveal">
+          <div class="eligibility-copy">
+            <div class="eyebrow">Player requirements</div>
+            <h2>Built for players ready to <span class="gold">commit.</span></h2>
+            <ul class="check-list">
+              <li><span><strong>Age 14–17</strong><br><span class="muted">The academy is designed for European high-school-age prospects.</span></span></li>
+              <li><span><strong>Active local club membership</strong><br><span class="muted">Players must remain fully involved in their home club.</span></span></li>
+              <li><span><strong>Consistent attendance</strong><br><span class="muted">Monthly camps, online meetings and assigned development work matter.</span></span></li>
+              <li><span><strong>Coachability and discipline</strong><br><span class="muted">The program is selective in attitude, not only current ability.</span></span></li>
+              <li><span><strong>Parent or guardian support</strong><br><span class="muted">Travel, communication and recruiting decisions require family involvement.</span></span></li>
+            </ul>
+          </div>
+
+          <aside class="membership-card">
+            <div>
+              <span class="label">Monthly academy membership</span>
+              <div class="price">€50<span>/month</span></div>
+              <p>One clear membership connecting live camps, personalized athletic work, digital learning, US mentorship and Northman event access.</p>
+            </div>
+            <div>
+              <a class="btn" href="#apply">Begin your application →</a>
+              <small>Acceptance is based on age, club status, position capacity and commitment.</small>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="eyebrow reveal">Frequently asked questions</div>
+        <h2 class="section-title reveal">What players and parents <span class="gold">need to know.</span></h2>
+
+        <div class="faq-grid">
+          <aside class="faq-aside reveal">
+            <p>The Academy is different from the open Northman camp format. It is a continuous development program for a narrower age group and requires an ongoing commitment.</p>
+            <p>For general Northman camps, showcases and current event listings, visit <a href="https://www.northmanfootballcamps.com/" target="_blank" rel="noopener">Northman Football Camps</a>.</p>
+          </aside>
+
+          <div class="faq-list reveal">
+            <details>
+              <summary>Does the Academy replace my local club?</summary>
+              <p>No. Players must remain active members of their local club and attend club practices and games. The Academy supplements local football with additional development, coaching and exposure.</p>
+            </details>
+            <details>
+              <summary>Who can apply?</summary>
+              <p>Dedicated European American football players aged 14–17 who belong to a local club and are prepared to follow the monthly training, camp and digital-learning structure.</p>
+            </details>
+            <details>
+              <summary>What is included in the €50 monthly fee?</summary>
+              <p>The planned membership includes monthly academy camps, individualized strength and speed programming, digital team meetings, film review, US coach sessions and access to Northman events and showcases.</p>
+            </details>
+            <details>
+              <summary>Are travel and accommodation included?</summary>
+              <p>No. Families should expect to arrange their own travel and accommodation for rotating academy weekends unless a specific event announcement states otherwise.</p>
+            </details>
+            <details>
+              <summary>Does membership guarantee US recruitment or a scholarship?</summary>
+              <p>No legitimate program can guarantee an offer or scholarship. Northman helps athletes develop, prepare credible recruiting materials, attend showcases and connect with coaches who evaluate international talent.</p>
+            </details>
+            <details>
+              <summary>How are position groups managed?</summary>
+              <p>Roster spots should be limited by position so quarterbacks, receivers, linemen and defensive groups maintain useful player-to-coach ratios. Applications may be waitlisted when a position group is full.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section apply-section" id="apply">
+      <div class="container">
+        <div class="apply-wrap reveal">
+          <div class="apply-grid">
+            <div>
+              <div class="eyebrow">Application pathway</div>
+              <h2>Ready to earn your <span class="gold">next level?</span></h2>
+              <p>Applications should be completed by a player together with a parent or guardian. Northman will review age, current club, position and commitment before confirming membership availability.</p>
+            </div>
+
+            <aside class="application-panel">
+              <h3>Start with the player profile</h3>
+              <p>The current Northman application collects the essential information needed for an initial academy review.</p>
+              <ol class="application-steps">
+                <li><span>1</span>Player name, age and contact details</li>
+                <li><span>2</span>Current club and primary position</li>
+                <li><span>3</span>Northman review and position-capacity check</li>
+                <li><span>4</span>Membership onboarding and schedule confirmation</li>
+              </ol>
+              <a class="btn btn-primary" href="https://www.northmanfootballcamps.com/about-4" target="_blank" rel="noopener">Open the Academy application <span class="btn-arrow">→</span></a>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true"><span>N</span></span>
+          <span class="brand-copy">Northman Football Academy<small>European player pathway</small></span>
+        </a>
+        <p>Year-round American football development for serious European athletes aged 14–17.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Academy</h3>
+        <a href="#program">Program</a>
+        <a href="#pathway">Two-year pathway</a>
+        <a href="#hubs">Regional hubs</a>
+        <a href="#eligibility">Player requirements</a>
+      </div>
+      <div class="footer-col">
+        <h3>Northman network</h3>
+        <a href="https://www.northmanfootballcamps.com/" target="_blank" rel="noopener">Football Camps</a>
+        <a href="https://www.northmanfootballcamps.com/general-8-2" target="_blank" rel="noopener">Passing Academy</a>
+        <a href="https://www.northmanfootballcamps.com/copy-of-2026-passing-academy" target="_blank" rel="noopener">US Showcases</a>
+        <a href="#apply">Apply to Academy</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Northman Football Academy. All rights reserved.</span>
+      <span>Develop locally. Prepare internationally.</span>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+
+    menuButton.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+      menuButton.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+      menuButton.textContent = isOpen ? '×' : '☰';
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        menuButton.setAttribute('aria-expanded', 'false');
+        menuButton.setAttribute('aria-label', 'Open navigation menu');
+        menuButton.textContent = '☰';
+      });
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const revealItems = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealItems.forEach(item => observer.observe(item));
+  </script>
+</body>
+</html>
